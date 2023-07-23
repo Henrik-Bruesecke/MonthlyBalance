@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top"> 
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Account Monthly Balances</span>
+    <mat-button-toggle-group #group="matButtonToggleGroup" name="fontStyle" aria-label="Font Style" style="width:25%" [value]="mode" (change)="onModeToggle(group.value)">
+      <mat-button-toggle value="Cumulative" style="width:100%">Cumulative</mat-button-toggle>
+      <mat-button-toggle value="Net" style="width:100%">Net</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</nav>
+<table class="table table-striped" style="table-layout:fixed">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th *ngFor="let month of months">{{ month }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let yearlyBalance of balances">
+      <td>{{ yearlyBalance.year }}</td>
+      <td *ngFor="let monthlyBalance of yearlyBalance.monthlyBalances">
+        <table>
+          <tr>
+            <td *ngIf="mode=='Cumulative'">{{ monthlyBalance.cumulativeBalance | currency: 'EUR' }}</td>
+            <td *ngIf="mode=='Net'">{{ monthlyBalance.netBalance | currency: 'EUR' }}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>

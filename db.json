@@ -1,0 +1,84 @@
+{
+"transactions": [
+{
+"timestamp": 1690121799,
+"amount": 5000
+},
+{
+"timestamp": 1690121799,
+"amount": 5000
+},
+{
+"timestamp": 1687529798,
+"amount": -1250
+},
+{
+"timestamp": 1684851398,
+"amount": 3580
+},
+{
+"timestamp": 1682259398,
+"amount": -2140
+},
+{
+"timestamp": 1700121799,
+"amount": 5000
+},
+{
+"timestamp": 1710121799,
+"amount": 5000
+},
+{
+"timestamp": 1679580998,
+"amount": 90
+},
+{
+"timestamp": 1677161798,
+"amount": 4500
+},
+{
+"timestamp": 1674483398,
+"amount": 3500
+},
+{
+"timestamp": 1671804998,
+"amount": -3000
+},
+{
+"timestamp": 1669212998,
+"amount": -2050
+},
+{
+"timestamp": 1669212997,
+"amount": 10500
+},
+{
+"timestamp": 1658585798,
+"amount": -2500
+},
+{
+"timestamp": 1627049798,
+"amount": 1250
+},
+{
+"timestamp": 1563891398,
+"amount": -600
+},
+{
+"timestamp": 1437660998,
+"amount": 250
+},
+{
+"timestamp": 1185200198,
+"amount": 100
+},
+{
+"timestamp": 680278598,
+"amount": -50
+},
+{
+"timestamp": 333209798,
+"amount": 2500
+}
+]
+}
